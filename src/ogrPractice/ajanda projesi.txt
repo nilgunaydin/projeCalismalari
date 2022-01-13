@@ -1,0 +1,96 @@
+Ajanda Uygulaması
+
+Kullanıcı Olarak Menüler
+
+╔═══════════════════════╗
+║    AJANDA MENUSU      ║
+╚═══════════════════════╝
+╔═══════════════════════╗
+║ 1- Etkinlik İşlemleri ║
+╠═══════════════════════╣
+║ 2- Rehber İşlemleri   ║
+╠═══════════════════════╣
+║ 3- Randevu Durumu     ║
+╠═══════════════════════╣
+║ 4- Çıkış              ║
+╚═══════════════════════╝
+
+Etkinlik İşlemleri Menü İçeririği
+╔════════════════════════════╗
+║  ETKİNLİK(RANDEVU) MENUSU  ║
+╠════════════════════════════╣
+║ 1- Etkinlik Ekle           ║
+║ 2- Etkinlik Sil            ║
+║ 3- Etkinlik Düzenle        ║
+║ 4- Etkinlik Durumu         ║
+║ 5- Çıkış (Ana Menüye Dön)  ║
+╚════════════════════════════╝
+
+Etkinlik İşlemleri ile ilgili Açıklamalar
+
+- Etkinlik(Randevu) ekleme yapacağı zaman "Etkinlik Adı, Tarihi, Saati , Kim ile, Açıklama Notu" verilerini alarak kayıt etsin.
+- Belirtilen tarih ve Saat dilimi içersinde daha önceden randevu varsa "Belirtilen tarih ve saat doludur.
+  Başka bir zaman belirleyiniz" şeklinde mesaj yazdırsın.
+- Etkinlik Silme yapacağı zaman: tarih ve saati yazdığında varsa silindi diye mesaj versin. yoksa "Her hangi bir etkinlik yok" yazdırsın
+- Etkinlik Düzenleme yapacağı zaman: tarih ve saati yazdığında varsa ekrana "Etkinlik Adı, Tarihi, Saati , Kim ile, Açıklama Notu"
+şeklinde getirsin ve düzenlemek istediği menüden seçsin ve ona göre düzenlensin.
+
+╔════════════════════════════╗
+║ ETKİNLİK DUZENLEME MENUSU  ║
+╠════════════════════════════╣
+║ 1- Etkinlik Adı            ║
+║ 2- Etkinlik Tarihi         ║
+║ 3- Etkinlik Saati          ║
+║ 4- Etkinliğin Kim ile      ║
+║ 5- Açıklama Notu           ║
+║ 6- Çıkış (Ana Menüye Dön)  ║
+╚════════════════════════════╝
+
+Etkinlik Durumu Mesnüsünde : Tüm listede olan etkinlikleri ekranda gösterecek.
+
+---------------------------------------------------------------------------------------------
+
+Rehber İşlemleri Menü İçeririği
+╔═══════════════════════════╗
+║  REHBER (KİŞİ) MENUSU     ║
+╠═══════════════════════════╣
+║ 1- Kişi Ekle              ║
+║ 2- Kişi Sil               ║
+║ 3- Kişi Düzenle           ║
+║ 4- Kişi Bilgileri         ║
+║ 5- Çıkış (Ana Menüye Dön) ║
+╚═══════════════════════════╝
+
+---------------------------------------------------------------------------------------------
+Etkinlik (Randevu) Durumu Menü İçeriği
+
+
+-Listeleme "Kişi Adı Soyadı, Tarihi, Saat, Not" kısımlarından oluşacak.
+Eğer o gün her hangi bir randevu yoksa mesaj olarak "Rendevunuz bulunmamaktadır." yazsın.
+---------------------------------------------------------------------------------------------
+
+Ajanda Projesi için 
+
+Oluşturulacak Class'lar
+
+1- etkinlik  class
+
+2- rehber class
+
+
+3- ajanda class (main method olacak class)
+
+4- data class (sabit bilgiler bilgileri olacağı class)
+
+	static double saatler[] = { 08.00, 09.00, 10.00, 11.00, 12.00, 13.00, 14.00, 15.00, 16.00, 17.00, 18.00, 19.00 };
+	static List<String> etkinlikler = new ArrayList<>(Arrays.asList("Piknik", "Tatil", "Is Gorusmesi", "Ozel Gorusme", "Seyahat", "Ziyaret","Diger"));
+	 static List<String>etkinlikTarihleri=new ArrayList<>(Arrays.asList("10.10.2010", "11.11.2011","12.12.12012"));
+	 static List<String>etkinlikKimIerle=new ArrayList<>(Arrays.asList("onunla", "bununla","sununla"));
+	 static List<String>etkinlikNotlari=new ArrayList<>(Arrays.asList("selam soyle", "beni arasin","katilamayacagim"));
+	
+	static List<String> adSoyad = new ArrayList<>(Arrays.asList("Ahmet CALISKAN", "Mehmet DOGRU", "Ayse Nur GUZEL", "Hasan ARKAS", "Dilara HANCI"));
+	static List<String> telefon = new ArrayList<>(Arrays.asList("0 555 555 55 51", "0 555 555 55 52","0 555 555 55 53","0 555 555 55 54","0 555 555 55 55"));
+	static List<String> eMail = new ArrayList<>(Arrays.asList("ahmetcaliskan@gmail.com", "mehmetdogru@hotmail.com","aysenurguzel@yandex.com","hasanarkas@gmail.com","dilarahanci@hanci.com"));
+	static List<String> adres = new ArrayList<>(Arrays.asList("Paris/Fransa", "İstanbul/ TÜRKİYE", "Hatay / TÜRKİYE", "İzmir / TÜRKİYE", "Almanya/"));
+
+
